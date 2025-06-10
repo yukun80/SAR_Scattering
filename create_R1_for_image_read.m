@@ -2,6 +2,7 @@
 % Loads T1.mat containing Img (amplitude) and Phase, combines them into a single
 % RAW file with amplitude followed by phase as float32 in big-endian order,
 % and names the file with dimensions (e.g., R1.128x128.raw)
+% 将由 MSTAR2JPG.m 生成的 .mat 文件转换为算法主程序期望的特定 .raw 二进制格式。它将所有幅度值连接在一起，然后是所有相位值 。
 
 function create_R1_for_image_read(input_mat_file, output_basename)
     % Load the T1.mat file

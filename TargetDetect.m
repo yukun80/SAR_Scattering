@@ -1,3 +1,4 @@
+% % 恒假警报率（CFAR）算法。任务是创建一个二进制掩码，将目标像素与背景杂波分离，确保后续步骤仅关注目标本身 。
 %detect targets from MStar tiles
 function [ DetRS ] = TargetDetect( Img,winsize )
 localsize=winsize/2;

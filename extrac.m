@@ -1,3 +1,7 @@
+% % 核心算法。
+% 实现了论文中描述的“改进的 RD-AML-CLEAN”方法。
+% 迭代地找到最亮的区域，调用其他函数进行分割、分类和参数估计，减去结果，并重复直到图像能量低于阈值 。
+
 function scatter_all=extrac(image,image_complex);      %%%%%%%%%从image图像中提取散射中心，image_complex表示复图像，
 
 close all;

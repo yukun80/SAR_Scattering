@@ -1,5 +1,4 @@
-%本文件的功能是读取原始的MSTAR数据文件，输出包含Img、phase、TargetAz的mat文件
-%不是直接生成jpg图片的
+%读取原始 MSTAR 数据文件。提取图像尺寸、目标方位角(TargetAz)以及幅度(Img)和相位数据。然后将这些信息保存到一个 .mat 文件 中。
 function MSTAR2JPG(sourcePath, targetPath)
 if ~exist(targetPath,'dir')
     mkdir(targetPath);

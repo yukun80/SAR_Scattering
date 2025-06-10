@@ -1,3 +1,6 @@
+% % watershed_image 实现了分水岭分割算法。
+% 它将目标区域进一步划分为更小的区域（感兴趣区域，或 ROIs），每个区域理想情况下仅包含一个散射中心。这类似于光学图像中的实例分割 。
+
 %function  segmentation=watershed_image(magnitude)
 
 function  [y1 y2 R1 R2]=watershed_image(magnitude)

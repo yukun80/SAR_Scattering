@@ -1,4 +1,5 @@
-function  E=model_rightangle(om,fx,fy,fc,x,y,a,r,o_o,L,A);
+% % 实现了单个特征散射中心的核心物理方程（论文中的方程 1-6）。给定 7 个参数，此函数计算了频域中的预期雷达回波 。
+function  E=model_rightangle(om,fx,fy,fc,x,y,a,r,o_o,L,A)
 %%%%%%%%%%%建立属性参数模型%%%%%
 %%%%%%%%%%%om、o_o：度; fx、fy、fc:Hz;x、y、L:米；
 %%%%%%%%%%%%%%%%*各参数意义:1.fx表示图像x向频率

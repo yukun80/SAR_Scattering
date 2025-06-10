@@ -6,3 +6,6 @@ SourceToYang/
 testin_3334/
 testout/
 *.mat
+*.JPG
+*.raw
+*.asv

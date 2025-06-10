@@ -1,3 +1,6 @@
+% % 模型确定。
+% 对于watershed_image中的每个 ROI，该函数决定其中的散射中心是局部化（点状）还是分布化（线状）。它通过分析 ROI 的惯性矩和局部峰的数量来做出这一决定。
+
 function  [type,temp_coordinate]=selection(segmented_image);
 
 %%%%%%%%确定散射中心类型和模型阶次%%%%%%%%%%%%%%

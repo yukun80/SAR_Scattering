@@ -1,7 +1,8 @@
-function [fileimage image_value] = image_read(image_file)
+% % 主算法使用的函数来读取自定义 .raw 文件。解析文件名以获取维度，读取二进制数据，并重构复值 SAR 图像（结合幅度和相位） 。
 %读取数据文件中的数据信息
 %image_file为要读取的数据文件名称(格式固定) 例如:'hb03333.015.128x128.raw'
-%
+
+function [fileimage image_value] = image_read(image_file)
 image_filename_inver = fliplr(image_file);
 index_dot = findstr(fliplr(image_file),'.');
 if (size(index_dot) < 2)
